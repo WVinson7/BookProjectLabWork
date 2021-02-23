@@ -1,0 +1,162 @@
+@font-face {
+  font-family: Raleway-Medium;
+  src: url('../fonts/Raleway-Medium.ttf');
+}
+
+
+body {
+	background-image: url('../images/book_row.png');
+	background-repeat: repeat-x;
+}
+
+.container {
+	/*border: 1px solid #ccc;*/
+}
+
+header {
+	height: 274px;
+}
+
+header.jumbotron-fluid {
+	padding: 0;
+	background-color: transparent; !important	
+}
+
+.page_title {
+	float: left;
+	width: 30%;
+	margin-top: 0px;
+}
+
+.page_title_heading {
+	font-family: Raleway-Medium;
+	margin-top: 0;
+}
+
+.sign_in_form {
+	/* border: 1px solid #000; */
+	float: right;
+	margin-top: 6px;
+	width: 42%;
+}
+
+.popular_titles {
+	background-image: url('../images/box_bottom.png');
+	background-repeat: repeat-x;
+	background-size: 25px 41px;
+	background-position: bottom left;
+	background-color: #f4f2e9;
+	border-radius: 10px;
+	border: 1px solid #ccc;	
+}
+
+.card {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.home_page_books {
+	background-color: #f4f2e9;
+	border-radius: 10px;
+	border: 1px solid #ccc;	
+}
+
+.sign_up_form {
+	border: 1px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	padding-right: 25px;
+	background-color: #f4f2e9;	
+}
+
+.row {
+	padding-right: 15px;
+}
+
+footer.container-fluid {
+	background-color: #f4f2e9;
+	border-top: 4px solid #74715a;	
+	background-image: url('../images/footer.png');
+	background-size: cover;
+}
+
+
+/* Below is the five star CSS Stuff */
+.rating {
+    width: 300px;
+    height: 34px;
+    background-color: #f6f3f3;
+}
+ 
+.rating label {
+    text-indent: -100px;
+    width: 40px !important;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+ 
+.label {
+    float: left;
+    padding-top: 3px;
+}
+         
+input[type="radio"] {
+    padding-right: 4px;
+    position: absolute;
+    left: 340px;
+    margin-top: 10px;
+}
+                 
+input[type="radio"], .rating label.stars {
+    float: right;
+    line-height: 30px;
+    height: 30px;
+}
+ 
+span + input[type=radio] + label, legend + input[type=radio] + label {
+    clear: right;
+    margin-right: 80px;
+    counter-reset: checkbox;
+}
+ 
+.rating input[type="radio"]:required + label:after {
+    content: '';
+    position: absolute;
+    left: 340px; 
+    min-height: 10px;
+    margin-top: -36px;
+    text-align: right;
+    background: #6cbf00;
+    padding: 10px 10px;
+    display: block;
+    width: 50px;
+}
+ 
+.rating label.stars {
+    background: transparent url('../images/star_out.jpg') no-repeat center center;
+	background-size: 25px 25px;
+}
+ 
+.rating label.stars:hover ~ label.stars, 
+.rating label.stars:hover, 
+.rating input[type=radio][name=stars]:checked ~ label.stars {
+    background-image: url('../images/star_on.png');
+	background-size: 30px 30px;
+    counter-increment: checkbox;
+}
+ 
+.rating input[type=radio][name=stars]:required + label.stars:after {
+    content: counter(checkbox) " stars!";
+}
+
+
+
+
+
+
+
+
+
+
+
